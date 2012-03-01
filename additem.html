@@ -23,7 +23,7 @@
 							<option value="CC Amex">CC Amex</option>
 						</select>
 					</li>
-					<li><label for="compname">Company Name:</label><input type="text" id="compname" /></li>
+					<li><label for="compname">Company Name:</label><input type="text" id="compname" placeholder="Publix"/></li>
 					<li>Transaction Type:
 						<ul>
 							<li><input type="radio" checked value="Charge" id="charge" name="transtype" /><label for="charge">Charge</label></li>
@@ -34,8 +34,21 @@
 						</ul>
 					</li>
 					<li><label for="amt">Amount:</label><input type="text" id="amt" /></li>
+					<li><label for="date">Transaction Date:</label><input type="date" id="date" /></li>
+					<li>Recurring?
+						<ul>
+							<li><input type="checkbox" value="Yes" id="yes" /><label for="yes">Yes</label></li>
+						</ul>
+					</li>
+					<li><label for="spendingrate">On a scale from 0 to 5, what is my over spending rate for this transaction?</label><input type="range" min="0" max="5" name="spendingrate" type="range"></li>
 				</ul>
-				
 			</fieldset>
+			<input type="submit" value="Save Transaction" />
+		</form>
+		<footer>
+			<nav>
+			<a href="#" title="Clear Stored Data">Clear Stored Data</a>  <a href="#" title="Display Data">Display Data</a>
+			</nav>
+		</footer>
 	</body>
 </html>

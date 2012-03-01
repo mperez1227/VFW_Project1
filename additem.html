@@ -14,6 +14,7 @@
 		<form action="#" method="post">
 			<fieldset>
 				<legend>Add A Transaction</legend>
+				<ul>
 					<li>
 						<label for="account">Account Used For Transaction:</label>
 						<select id="account">
@@ -22,6 +23,19 @@
 							<option value="CC Amex">CC Amex</option>
 						</select>
 					</li>
+					<li><label for="compname">Company Name:</label><input type="text" id="compname" /></li>
+					<li>Transaction Type:
+						<ul>
+							<li><input type="radio" checked value="Charge" id="charge" name="transtype" /><label for="charge">Charge</label></li>
+							<li><input type="radio" value="Payment" id="payment" name="transtype" /><label for="payment">Payment</label></li>
+							<li><input type="radio" value="Withdrawal" id="withdrawal" name="transtype" /><label for="withdrawal">Withdrawal</label></li>
+							<li><input type="radio" value="Deposit" id="deposit" name="transtype" /><label for="deposit">Deposit</label></li>
+							<li><input type="radio" value="Credit" id="credit" name="transtype" /><label for="credit">Credit</label></li>
+						</ul>
+					</li>
+					<li><label for="amt">Amount:</label><input type="text" id="amt" /></li>
+				</ul>
+				
 			</fieldset>
 	</body>
 </html>
